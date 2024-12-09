@@ -1,0 +1,107 @@
+/* Definição de variáveis para cores*/
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --nav-background-color: #333;
+    --nav-hover-background-color: #575757;
+    --header-background-color: #282828;
+    --header-text-color: white;
+    --form-border-color: #ccc;
+    --button-background-color: #333;
+    --button-hover-background-color: #575757;
+    --button-text-color: white;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Menu de navegação */
+nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: var(--nav-hover-background-color);
+    border-radius: 5px;
+}
+
+/* Estilos do conteúdo */
+header {
+    text-align: center;
+    margin-top: 60px;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Formatação em grupo/múltipla */
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid var(--form-border-color);
+}
+
+form button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--button-hover-background-color);
+}
